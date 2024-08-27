@@ -13,16 +13,16 @@ interface CategorySpending {
   icons: string | undefined;
 }
 
-interface ReportProps {
-  userID: string | null;
-}
+// interface ReportProps {
+//   userID: string | null;
+// }
 
 interface DailyExpense {
   date: string;
   totalAmount: number;
 }
 
-const ReportPage: React.FC<ReportProps> = () => {
+const ReportPage = () => {
   const [topSpending, setTopSpending] = useState<CategorySpending[]>([]);
   const [topIncome, setTopIncome] = useState<CategorySpending[]>([]);
   const [records, setRecords] = useState<any[]>([]);
