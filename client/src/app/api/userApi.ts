@@ -1,5 +1,5 @@
 import axios from "axios";
-const SERVER_URL = "http://localhost:3109/users";
+const SERVER_URL = "${process.env.SERVER}/users";
 
 /*
 const res = await axios.post(`${SERVER_URL}/register`, body, {

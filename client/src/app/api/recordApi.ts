@@ -1,7 +1,7 @@
 "use server";
 
 import axios from "axios";
-const SERVER_URL = "http://localhost:3109/records";
+const SERVER_URL = `${process.env.SERVER}/records`;
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { RecordType } from "../Record/page";
 

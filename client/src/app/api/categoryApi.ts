@@ -1,6 +1,6 @@
 "use server";
 import axios from "axios";
-const SERVER_URL = "http://localhost:3109/categories";
+const SERVER_URL = `${process.env.SERVER}/categories`;
 
 type CategoryType = {
   _id: string;

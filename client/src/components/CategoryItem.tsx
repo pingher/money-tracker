@@ -36,7 +36,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
         >
           <span>
             <img
-              src={`http://localhost:3109/${category.icons}`}
+              src={`${process.env.SERVER}/${category.icons}`}
               width={30}
               height={30}
               alt={category.title}

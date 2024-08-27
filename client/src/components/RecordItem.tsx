@@ -187,7 +187,7 @@ const RecordItem: React.FC<RecordItemProps> = ({ records }) => {
                 <div className="flex items-center gap-3">
                   <div className="flex flex-col">
                     <img
-                      src={`http://localhost:3109/${record.category?.icons}`}
+                      src={`${process.env.SERVER}/${record.category?.icons}`}
                       width={40}
                       height={40}
                       alt="Record Icon"
@@ -350,7 +350,7 @@ const RecordItem: React.FC<RecordItemProps> = ({ records }) => {
                   className="mb-2 bg-white p-4 px-6 flex items-center gap-3 rounded-lg"
                 >
                   <img
-                    src={`http://localhost:3109/${category.icons}`}
+                    src={`${process.env.SERVER}/${category.icons}`}
                     width={40}
                     height={40}
                     alt="Record Icon"
